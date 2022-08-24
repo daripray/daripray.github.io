@@ -57,9 +57,8 @@
         ga('send', 'pageview');
     </script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script id="_carbonads_projs" type="text/javascript"
-        src="https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&callback=_carbonads_go"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    <!-- <script id="_carbonads_projs" type="text/javascript" src="https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&callback=_carbonads_go"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
             integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -213,7 +212,7 @@
                 aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
                 <div class="offcanvas-header px-4 pb-0">
                     <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar" id="btnCloseNavbar"></button>
                 </div>
                 <div class="offcanvas-body p-4 pt-0 p-lg-0">
                     <hr class="d-lg-none text-white-50">
@@ -293,10 +292,10 @@
                                 <small class="d-lg-none ms-2">Open Collective</small>
                             </a>
                         </li>
-                        <li class="nav-item py-1 col-12 col-lg-auto">
+                        <!-- <li class="nav-item py-1 col-12 col-lg-auto">
                             <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
                             <hr class="d-lg-none text-white-50">
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -407,10 +406,9 @@
             <section class="row g-lg-5 mb-5">
                 <div class="bd-content col-lg-3">
                     <h2 id="about">About</h2>
-                    <p>Brand new components and templates to help folks quickly get started with Bootstrap and
-                        demonstrate best practices for adding onto the framework.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cupiditate aliquam explicabo soluta in optio itaque adipisci quidem! Reprehenderit deleniti natus nam laboriosam dolores quod sed eum, id temporibus commodi.</p>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9" style="min-height: 100vh!important;">
                     <div class="row">
                         <div class="col-sm-6 col-md-4 mb-3">
                             <a class="d-block" href="https://getbootstrap.com/docs/5.2/examples/album/">
@@ -593,7 +591,7 @@
             <!-- Portfolio -->
             <section class="row g-lg-5 mb-5">
                 <div class="bd-content col-lg-3">
-                    <h2 id="portfolio">RTL</h2>
+                    <h2 id="portfolio">Portfolio</h2>
                     <p>See Bootstrap's RTL version in action with these modified Custom Components examples.</p>
                     <div class="bd-callout bd-callout-warning small">
                         <p>
@@ -605,7 +603,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 vh-100">
                     <div class="row">
                         <div class="col-sm-6 col-md-4 mb-3">
                             <a class="d-block" href="https://getbootstrap.com/docs/5.2/examples/album-rtl/" hreflang="ar">
@@ -665,25 +663,38 @@
             </section>
 
             <!-- Contact -->
-            <section class="row g-lg-5 mb-5">
-                <div class="bd-content col-lg-3">
+            <section class="row g-lg-3 mb-5">
+                <div class="bd-content col-lg-12">
                     <h2 id="contact">Contact</h2>
-                    <p>Taking the default navbar component and showing how it can be moved, placed, and extended.</p>
+                    <!-- <p>Taking the default navbar component and showing how it can be moved, placed, and extended.</p> -->
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-12 vh-100">
                     <div class="row">
-                        <div class="col-sm-6 col-md-4 mb-3">
-                            <a class="d-block" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
-                                <img class="img-thumbnail mb-3" srcset="https://getbootstrap.com/docs/5.2/assets/img/examples/navbars.png, https://getbootstrap.com/docs/5.2/assets/img/examples/navbars@2x.png 2x"
-                                    src="https://getbootstrap.com/docs/5.2/assets/img/examples/navbars.png"
-                                    alt=""
-                                    width="480" height="300" loading="lazy">
-                                <h3 class="h5 mb-1">Navbars</h3>
-                            </a>
-                            <p class="text-muted">Demonstration of all responsive and container options for the navbar.
+                        <div class="col-lg-6 col-md-6 mb-3">
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quia possimus magnam autem sed, ea ratione, atque ad sapiente voluptatum itaque quae. Mollitia explicabo, ducimus minus molestiae incidunt culpa?
                             </p>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, autem! Exercitationem molestias fugiat rerum tempore dolorum error nemo deserunt unde perferendis? Possimus consequatur quibusdam, officia corrupti similique laboriosam voluptatibus expedita?</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="col-lg-6 col-md-6 mb-3">
+                            <form id="contactForm" method="post" action="">
+                                <div class="mb-3">
+                                    <label class="form-label" for="name">Name</label>
+                                    <input type="text" name="name" value="" placeholder="your name here" class="form-control" id="name" required/>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input type="email" name="email" value="" placeholder="your email here" class="form-control" id="email" required/>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="message">Message</label>
+                                    <textarea type="text" name="message" value="" placeholder="your message here" class="form-control" id="message" maxlength="6000" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button id="submit" class="btn btn-xs btn-primary" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- <div class="col-sm-6 col-md-6 mb-3">
                             <a class="d-block" href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/">
                                 <img class="img-thumbnail mb-3" srcset="https://getbootstrap.com/docs/5.2/assets/img/examples/navbars-offcanvas.png, https://getbootstrap.com/docs/5.2/assets/img/examples/navbars-offcanvas@2x.png 2x" src="https://getbootstrap.com/docs/5.2/assets/img/examples/navbars/offcanvas.png" alt="" width="480" height="00" loading="lazy">
                                 <h3 class="h5 mb-1">Navbars offcanvas</h3>
@@ -721,12 +732,12 @@
                             </a>
                             <p class="text-muted">Turn your expandable navbar into a sliding offcanvas menu (doesn't use
                                 our offcanvas component).</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
 
-            <div class="row g-lg-5 mb-5">
+            <!-- <div class="row g-lg-5 mb-5">
                 <div class="bd-content col-lg-3">
                     <h2 id="integrations">Integrations</h2>
                     <p>Integrations with external libraries.</p>
@@ -745,7 +756,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <hr class="my-5">
 
@@ -899,12 +910,40 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function () {
+            $(".navbar-nav a").click(function () {
+                $('body').animate({
+                    scrollTop: eval($($(this).attr('href')).offset().top - 70)
+                }, 200);
+                setTimeout(
+                    function () {
+                       $("#btnCloseNavbar").click();
+                    },
+                    1000);
+            });
 
-    <script>
-        // $("#bdNavbar a").click(function () {
-        //         $('.offcanvas').offcanvas('hide');
-        //     });
+            $("#contactForm").submit(function (event) {
+                // Stop form from submitting normally
+                event.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://script.google.com/macros/s/AKfycbxJlYEC2-OW4OZEIFLl9CvvsLaNIWdawvuO8W8qqg/exec',
+                    data: {
+                        'name': $('#contactForm #name').val(),
+                        'message': $('#contactForm #message').val(),
+                        'email': $('#contactForm #email').val(),
+                        'url': $(location).attr('href')
+                    }
+                }).done(function (response) {
+                    console.log(response); // if you're into that sorta thing
+                });
+            });
+        });
     </script>
+    <!--====== Main js ======-->
+    <!-- <script src="assets/js/main.js"></script> -->
 </body>
 
 </html>
