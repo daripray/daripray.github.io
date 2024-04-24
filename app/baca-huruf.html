@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Membaca Text</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        :root {}
+
+        html,
+        body {
+            font-family: "Poppins" !important;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+
+            /* set animation */
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #ccc;
+            opacity: 0;
+            /* Set initial opacity to 0 */
+            animation: fadeIn 2s ease-out forwards;
+            /* Apply fadeIn animation */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                /* Change opacity to 1 at the end of the animation */
+            }
+        }
+
+        .display {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .font {
+            font-size: 5rem;
+        }
+
+        .display>div {
+            border-bottom: .5rem solid gray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="display font" id="displayContainer"></div>
+
+    <script>
+        function rand_huruf() {
+            var huruf = 'BCDFGHJKLMNPQRSTVWXYZ';
+            return huruf.charAt(Math.floor(Math.random() * huruf.length));
+        }
+
+        function make_aeiou(huruf) {
+            var vokal = ['A', 'E', 'I', 'O', 'U'];
+            var result = '';
+            vokal.forEach(function (v) {
+                result += huruf + v + ' &nbsp; ';
+            });
+            return result.trim();
+        }
+
+        function rand_aeiou(huruf) {
+            var vokal = 'AEIOU';
+            return huruf + vokal.charAt(Math.floor(Math.random() * vokal.length));
+        }
+
+        function generateHTML() {
+            var displayContainer = document.getElementById('displayContainer');
+            var h1 = rand_huruf();
+            var huruf_1 = h1;
+            var aeiou_1 = make_aeiou(huruf_1);
+            var huruf_2 = rand_aeiou(huruf_1);
+
+            var h2 = rand_huruf();
+            var huruf_3 = huruf_2 + h2;
+            var huruf_4 = huruf_2 + ' - ' + rand_aeiou(h2);
+
+            var huruf_5 = huruf_4 + rand_huruf();
+            var huruf_ng = huruf_4 + 'NG';
+
+            displayContainer.innerHTML = '';
+            displayContainer.innerHTML += "<div>" + huruf_1 + "</div>";
+            displayContainer.innerHTML += "<div>" + aeiou_1 + "</div>";
+            displayContainer.innerHTML += "<div>" + huruf_2 + "</div>";
+            displayContainer.innerHTML += "<div>" + huruf_3 + "</div>";
+            displayContainer.innerHTML += "<div>" + huruf_4 + "</div>";
+            displayContainer.innerHTML += "<div>" + huruf_5 + "</div>";
+            displayContainer.innerHTML += "<div>" + huruf_ng + "</div>";
+        }
+
+        setInterval(generateHTML, 60000); // Reload every 60 seconds
+        generateHTML(); // Initial call
+    </script>
+</body>
+
+</html>
